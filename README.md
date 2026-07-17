@@ -35,37 +35,6 @@ Includes multiple analytical views:
 
 -----------------------------------------------------------
 
-## Project Structure
-
-saas-revenue-intelligence/
-├── .streamlit/
-│ └── config.toml
-├── data/
-├── model/
-├── notebooks/
-│ ├── 01_cleaning.ipynb
-│ ├── 02_analysis.ipynb
-│ ├── 03_prediction.ipynb
-│ └── 04_modeling.ipynb
-├── pages/
-│ ├── 1_Revenue_Health.py
-│ ├── 2_Business_Drivers.py
-│ ├── 3_Risk_Patterns.py
-│ ├── 4_Churn_Forecasting.py
-│ └── 5_Account_Risk_Profiler.py
-├── src/
-│ ├── train.py
-│ ├── predict.py
-│ ├── business_logic.py
-│ └── analysis_utils.py
-├── app.py
-├── requirements.txt
-├── setup.sh
-└── README.md
-
-
------------------------------------------------------------
-
 ## Dataset Overview
 
 - Identifiers: account_id, month
@@ -98,8 +67,8 @@ saas-revenue-intelligence/
 - Python
 - Streamlit
 - Pandas & NumPy
-- Scikit-learn / LightGBM
-- Matplotlib / Seaborn / Plotly
+- Scikit-learn & LightGBM
+- Matplotlib, Seaborn & Plotly
 
 -----------------------------------------------------------
 
