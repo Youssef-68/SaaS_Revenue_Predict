@@ -446,6 +446,6 @@ else:
 st.markdown("---")
 col1, col2 = st.columns(2)
 with col1:
-    st.page_link("pages/3_Risk_Patterns.py", label="← Risk Patterns", icon="🔍")
+    st.page_link("pages/3_Risk_Patterns.py", label="← Risk Patterns")
 with col2:
-    st.page_link("pages/5_Account_Risk_Profiler.py", label="→ Account Risk Profiler", icon="🎯")
+    st.page_link("pages/5_Account_Risk_Profiler.py", label="→ Account Risk Profiler")

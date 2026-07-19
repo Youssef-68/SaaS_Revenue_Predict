@@ -1,8 +1,8 @@
 # SaaS Revenue Intelligence Platform (Business Analytics & Churn Prediction System)
 
-
 import streamlit as st
 import pandas as pd
+import src.data_loader
 
 import sys
 from pathlib import Path
@@ -197,10 +197,6 @@ with insight_cols[2]:
     ontime_churn = df[df['payment_delay_flag'] == 0]['next_month_mrr'].lt(df[df['payment_delay_flag'] == 0]['current_mrr']).mean()
     st.metric("Delayed vs On-Time Churn", f"{delayed_churn/ontime_churn:.1f}x" if ontime_churn > 0 else "N/A")
     st.caption("Churn rate for delayed payment accounts")
-
-with insight_cols[4]:
-    st.metric("Analysis Columns", len(BUSINESS_COLUMNS))
-    st.caption("Business metrics available for analysis")
 
 # Footer
 st.markdown("---")

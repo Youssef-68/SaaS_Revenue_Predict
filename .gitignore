@@ -1,16 +1,25 @@
-# Data
-data/
-*.csv
-*.parquet
-
-# Models
-model/*.pkl
-model/*.joblib
-
-# Python cache
+# Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# Environment
-.env
+# Virtual env
 venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+
+# Data (exclude large/raw files ONLY)
+data/*.csv
+
+# Logs
+*.log
+
+# Streamlit cache
+.streamlit/secrets.toml
