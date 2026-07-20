@@ -27,35 +27,6 @@ A customer is considered **churned** if: next_month_mrr < current_mrr
 
 ---
 
-## Project Structure
-
-├── data/
-│   ├── saas_50k_v1.csv
-│   └── cleaned_data.csv
-│
-├── notebooks/
-│   ├── 01_cleaning.ipynb
-│   ├── 02_analysis.ipynb
-│   ├── 03_prediction.ipynb
-│   └── 04_modeling.ipynb
-│
-├── pages/
-│   ├── Revenue_Health.py
-│   ├── Business_Drivers.py
-│   ├── Risk_Patterns.py
-│   ├── Churn_Forecasting.py
-│   └── Account_Risk_Profiler.py
-│
-├── src/
-│   ├── train.py
-│   ├── predict.py
-│   ├── business_logic.py
-│   └── analysis_utils.py
-│
-└── app.py
-
----
-
 ## Features Used
 
 - Company Profile: "company_size", "industry", "contract_type"
